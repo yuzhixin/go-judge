@@ -33,6 +33,6 @@ go-judge.h
 /tmp
 
 cmd/go-judge/version/version.txt
-
+vendor/
 dist/
 .vscode

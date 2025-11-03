@@ -31,6 +31,8 @@ func prepareCmdFdTTY(c *Cmd, count int, newStoreFile NewStoreFile) (f []*os.File
 		err = fmt.Errorf("failed to open tty %v", err)
 		return nil, nil, err
 	}
+	// 禁用 TTY 回显
+	disableEcho(fTty)
 	sf := newSharedFile(fPty)
 
 	files := make([]*os.File, count)
