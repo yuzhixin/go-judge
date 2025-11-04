@@ -1,6 +1,8 @@
 module github.com/criyle/go-judge
 
-go 1.25
+go 1.24.0
+
+toolchain go1.24.9
 
 require (
 	github.com/coreos/go-systemd/v22 v22.6.0
